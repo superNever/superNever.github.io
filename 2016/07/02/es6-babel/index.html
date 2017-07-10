@@ -1,4 +1,79 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>es6-安装babel | supernever</title><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/5.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/grids-responsive-min.css"><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">es6-安装babel</h1><a id="logo" href="/.">supernever</a><p class="description"></p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">es6-安装babel</h1><div class="post-meta">Jul 2, 2016<span> | </span><span class="category"><a href="/categories/ES6/">ES6</a></span><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> Hits</span></span></div><a data-thread-key="2016/07/02/es6-babel/" href="/2016/07/02/es6-babel/#comments" class="ds-thread-count"></a><div class="post-content"><p>Babel是一个广泛使用的ES6转码器，可以将ES6代码转为ES5代码，从而在现有环境执行。这意味着，你可以用ES6的方式编写程序，又不用担心现有环境是否支持。<br><a id="more"></a></p>
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8" />
+  
+  <title>es6-安装babel | supernever</title>
+  <meta name="author" content="supernever" />
+
+  
+  <meta name="description" content="Babel是一个广泛使用的ES6转码器，可以将ES6代码转为ES5代码，从而在现有环境执行。这意味着，你可以用ES6的方式编写程序，又不用担心现有环境是否支持。" />
+  
+
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <meta property="og:title" content="es6-安装babel" />
+  <meta property="og:site_name" content="supernever" />
+
+  
+  
+
+  
+    <meta property="og:image" content="undefined" />
+  
+
+  
+  <link href="/css/images/favicon.ico" rel="icon" />
+  
+
+  <link rel="alternate" href="/atom.xml" title="supernever" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+
+  <!-- baidu webmaster push -->
+  <script src='//push.zhanzhang.baidu.com/push.js'></script>
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">supernever</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2016-07-02T01:36:06.000Z"><a href="/2016/07/02/es6-babel/">2016-07-02</a></time>
+      
+      
+  
+    <h1 class="title">es6-安装babel</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>Babel是一个广泛使用的ES6转码器，可以将ES6代码转为ES5代码，从而在现有环境执行。这意味着，你可以用ES6的方式编写程序，又不用担心现有环境是否支持。<br><a id="more"></a></p>
 <h1 id="配置-babelrc"><a href="#配置-babelrc" class="headerlink" title="配置.babelrc"></a>配置.babelrc</h1><p>使用babel的第一步就是配置该文件，因为该文件是用来设置转码规则和插件的。基本格式如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="string">"presets"</span>: [],</div><div class="line">  <span class="string">"plugins"</span>: []</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>presets字段设定转码规则，官方提供以下的规则集，你可以根据需要安装。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># ES2015转码规则</span></div><div class="line">$ npm install --save-dev babel-preset-es2015</div><div class="line"></div><div class="line"><span class="comment"># react转码规则</span></div><div class="line">$ npm install --save-dev babel-preset-react</div><div class="line"></div><div class="line"><span class="comment"># ES7不同阶段语法提案的转码规则（共有4个阶段），选装一个</span></div><div class="line">$ npm install --save-dev babel-preset-stage-0</div><div class="line">$ npm install --save-dev babel-preset-stage-1</div><div class="line">$ npm install --save-dev babel-preset-stage-2</div><div class="line">$ npm install --save-dev babel-preset-stage-3</div></pre></td></tr></table></figure></p>
 <p>然后，将这些规则加入.babelrc.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="string">"presets"</span>: [</div><div class="line">    <span class="string">"es2015"</span>,</div><div class="line">    <span class="string">"react"</span>,</div><div class="line">    <span class="string">"stage-2"</span></div><div class="line">  ],</div><div class="line">  <span class="string">"plugins"</span>: []</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
@@ -13,19 +88,224 @@
 <h1 id="在线转换"><a href="#在线转换" class="headerlink" title="在线转换"></a>在线转换</h1><p>Babel提供一个REPL<a href="https://babeljs.io/repl/" target="_blank" rel="external">在线编译器</a>，可以在线将ES6代码转为ES5代码。转换后的代码，可以直接作为ES5代码插入网页运行。</p>
 <h1 id="最后效果"><a href="#最后效果" class="headerlink" title="最后效果"></a>最后效果</h1><p>这个是我自己的package.json<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="string">"name"</span>: <span class="string">"test"</span>,</div><div class="line">  <span class="string">"version"</span>: <span class="string">"1.0.0"</span>,</div><div class="line">  <span class="string">"description"</span>: <span class="string">""</span>,</div><div class="line">  <span class="string">"main"</span>: <span class="string">"index.js"</span>,</div><div class="line">  <span class="string">"scripts"</span>: &#123;</div><div class="line">    <span class="string">"build"</span>: <span class="string">"babel src -d lib"</span></div><div class="line">  &#125;,</div><div class="line">  <span class="string">"author"</span>: <span class="string">""</span>,</div><div class="line">  <span class="string">"license"</span>: <span class="string">"ISC"</span>,</div><div class="line">  <span class="string">"dependencies"</span>: &#123;</div><div class="line">    <span class="string">"babel-core"</span>: <span class="string">"^6.10.4"</span></div><div class="line">  &#125;,</div><div class="line">  <span class="string">"devDependencies"</span>: &#123;</div><div class="line">    <span class="string">"babel-cli"</span>: <span class="string">"^6.10.1"</span>,</div><div class="line">    <span class="string">"babel-preset-es2015"</span>: <span class="string">"^6.9.0"</span>,</div><div class="line">    <span class="string">"babel-preset-react"</span>: <span class="string">"^6.11.1"</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>同时注解一下如下过程含义：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">Stage 0 - Strawman（展示阶段）</div><div class="line">Stage 1 - Proposal（征求意见阶段）</div><div class="line">Stage 2 - Draft（草案阶段）</div><div class="line">Stage 3 - Candidate（候选人阶段）</div><div class="line">Stage 4 - Finished（定案阶段）</div></pre></td></tr></table></figure></p>
-</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a data-url="http://www.supernever.com/2016/07/02/es6-babel/" data-id="cj4xxaoap000yzcfyjlgcl6f6" class="article-share-link">分享到</a><div class="tags"> <b>相关链接：</b><a href="/tags/javascript/">javascript</a><a href="/tags/js-es6/">js-es6</a></div><div style="margin:10px 0" clear:both><h3>打赏一杯☕️吧😝😝😝</h3><br><figure style="display:inline-block"><img src="/img/wx.png" width="200" height="200"><figcaption style="text-align:center">微信</figcaption></figure><figure style="display:inline-block"><img src="/img/zfb.png" width="200" height="200"><figcaption style="text-align:center">支付宝</figcaption></figure></div><div class="post-nav"><a href="/2016/07/02/es6-arrows/" class="pre">es6-arrows</a><a href="/2016/06/23/ko-BindingSynta/" class="next">knockoutjs--BindingSynta</a></div><div data-thread-key="2016/07/02/es6-babel/" data-title="es6-安装babel" data-url="http://www.supernever.com/2016/07/02/es6-babel/" class="ds-share flat"><div class="ds-share-inline"><ul class="ds-share-icons-16"><li data-toggle="ds-share-icons-more"><a href="javascript:void(0);" class="ds-more">分享到：</a></li><li><a href="javascript:void(0);" data-service="weibo" class="ds-weibo">微博</a></li><li><a href="javascript:void(0);" data-service="qzone" class="ds-qzone">QQ空间</a></li><li><a href="javascript:void(0);" data-service="qqt" class="ds-qqt">腾讯微博</a></li><li><a href="javascript:void(0);" data-service="wechat" class="ds-wechat">微信</a></li></ul><div class="ds-share-icons-more"></div></div></div><div data-thread-key="2016/07/02/es6-babel/" data-title="es6-安装babel" data-url="http://www.supernever.com/2016/07/02/es6-babel/" data-author-key="1" class="ds-thread"></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ES6/">ES6</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/">前端</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/html/" style="font-size: 15px;">html</a> <a href="/tags/DOM/" style="font-size: 15px;">DOM</a> <a href="/tags/getBoundingClientRect/" style="font-size: 15px;">getBoundingClientRect</a> <a href="/tags/ES6/" style="font-size: 15px;">ES6</a> <a href="/tags/Symbol/" style="font-size: 15px;">Symbol</a> <a href="/tags/bind/" style="font-size: 15px;">bind</a> <a href="/tags/map/" style="font-size: 15px;">map</a> <a href="/tags/javascript/" style="font-size: 15px;">javascript</a> <a href="/tags/js冒泡/" style="font-size: 15px;">js冒泡</a> <a href="/tags/carousel/" style="font-size: 15px;">carousel</a> <a href="/tags/set/" style="font-size: 15px;">set</a> <a href="/tags/js-es6/" style="font-size: 15px;">js-es6</a> <a href="/tags/generator/" style="font-size: 15px;">generator</a> <a href="/tags/css/" style="font-size: 15px;">css</a> <a href="/tags/css-selector/" style="font-size: 15px;">css-selector</a> <a href="/tags/git/" style="font-size: 15px;">git</a> <a href="/tags/最基本操作/" style="font-size: 15px;">最基本操作</a> <a href="/tags/JavaScript/" style="font-size: 15px;">JavaScript</a> <a href="/tags/Array/" style="font-size: 15px;">Array</a> <a href="/tags/jquery/" style="font-size: 15px;">jquery</a> <a href="/tags/jquery-noConflict/" style="font-size: 15px;">jquery-noConflict</a> <a href="/tags/代码片段/" style="font-size: 15px;">代码片段</a> <a href="/tags/knockout-js/" style="font-size: 15px;">knockout.js</a> <a href="/tags/DOM-EDIT/" style="font-size: 15px;">DOM-EDIT</a> <a href="/tags/media-query/" style="font-size: 15px;">media-query</a> <a href="/tags/http/" style="font-size: 15px;">http</a> <a href="/tags/mime/" style="font-size: 15px;">mime</a> <a href="/tags/mobx/" style="font-size: 15px;">mobx</a> <a href="/tags/nodejs/" style="font-size: 15px;">nodejs</a> <a href="/tags/assert/" style="font-size: 15px;">assert</a> <a href="/tags/MySql/" style="font-size: 15px;">MySql</a> <a href="/tags/promise/" style="font-size: 15px;">promise</a> <a href="/tags/js-proto/" style="font-size: 15px;">js__proto__</a> <a href="/tags/react/" style="font-size: 15px;">react</a> <a href="/tags/react-life/" style="font-size: 15px;">react-life</a> <a href="/tags/reduce/" style="font-size: 15px;">reduce</a> <a href="/tags/shell/" style="font-size: 15px;">shell</a> <a href="/tags/scp/" style="font-size: 15px;">scp</a> <a href="/tags/tar/" style="font-size: 15px;">tar</a> <a href="/tags/小命令/" style="font-size: 15px;">小命令</a> <a href="/tags/regexp/" style="font-size: 15px;">regexp</a> <a href="/tags/可视化格式模型/" style="font-size: 15px;">可视化格式模型</a> <a href="/tags/tool/" style="font-size: 15px;">tool</a> <a href="/tags/webpack-howto/" style="font-size: 15px;">webpack-howto</a> <a href="/tags/yarn/" style="font-size: 15px;">yarn</a> <a href="/tags/webpack/" style="font-size: 15px;">webpack</a> <a href="/tags/模板/" style="font-size: 15px;">模板</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/07/10/javascript基础-Array/">javascript基础-Array</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/28/node-assert/">node_assert</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/03/async-await/">async-await</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/02/mobx几个小关键词/">mobx几个小关键词</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/02/shell-小命令/">shell-小命令</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/02/shell-scp/">shell-scp</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/02/shell-tar/">shell-tar</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/02/mysql基本命令/">mysql基本命令</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/01/decorator/">decorator</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/24/Symbol-iterator/">Symbol.iterator</a></li></ul></div><div class="widget"><div class="comments-title"><i class="fa fa-comment-o"> 最近评论</i></div><div data-num-items="5" data-show-avatars="0" data-show-time="1" data-show-admin="0" data-excerpt-length="32" data-show-title="1" class="ds-recent-comments"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 相关链接</i></div><a href="http://www.github.com/supernever" title="github" target="_blank" class="links-github"></a><a href="http://weibo.com/u/3282385447?refer_flag=1001030102_" title="weibo" target="_blank" class="links-weibo"></a><a href="https://www.zhihu.com/people/supernever-65/activities" title="zhihu" target="_blank" class="links-zhihu"></a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2018. All Rights Reserved版权所有
- 京ICP备17005055号-1</div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css?v=0.0.0"><script>var duoshuoQuery = {short_name:'supernever'};
-(function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0]
-        || document.getElementsByTagName('body')[0]).appendChild(ds);
-})();
-</script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-ga('create','true','auto');ga('send','pageview');
-</script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
+
+      
+    </div>
+    
+    <footer>
+        <div class="alignright">
+          
+          <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
+        </div>
+        
+  
+  <div class="categories">
+    <a href="/categories/ES6/">ES6</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/javascript/">javascript</a>, <a href="/tags/js-es6/">js-es6</a>
+  </div>
+
+        <!-- partial('post/share') -->
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:www.supernever.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/ES6/">ES6</a><small>10</small></li>
+  
+    <li><a href="/categories/前端/">前端</a><small>21</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">最新文章</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2017/07/10/javascript基础-Array/">javascript基础-Array</a>
+      </li>
+    
+      <li>
+        <a href="/2017/03/28/node-assert/">node_assert</a>
+      </li>
+    
+      <li>
+        <a href="/2017/03/03/async-await/">async-await</a>
+      </li>
+    
+      <li>
+        <a href="/2017/03/02/mobx几个小关键词/">mobx几个小关键词</a>
+      </li>
+    
+      <li>
+        <a href="/2017/03/02/shell-小命令/">shell-小命令</a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">标签</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/Array/">Array</a><small>1</small></li>
+  
+    <li><a href="/tags/DOM/">DOM</a><small>2</small></li>
+  
+    <li><a href="/tags/DOM-EDIT/">DOM-EDIT</a><small>1</small></li>
+  
+    <li><a href="/tags/ES6/">ES6</a><small>9</small></li>
+  
+    <li><a href="/tags/JavaScript/">JavaScript</a><small>2</small></li>
+  
+    <li><a href="/tags/MySql/">MySql</a><small>1</small></li>
+  
+    <li><a href="/tags/Symbol/">Symbol</a><small>1</small></li>
+  
+    <li><a href="/tags/assert/">assert</a><small>1</small></li>
+  
+    <li><a href="/tags/bind/">bind</a><small>1</small></li>
+  
+    <li><a href="/tags/carousel/">carousel</a><small>1</small></li>
+  
+    <li><a href="/tags/css/">css</a><small>1</small></li>
+  
+    <li><a href="/tags/css-selector/">css-selector</a><small>1</small></li>
+  
+    <li><a href="/tags/generator/">generator</a><small>1</small></li>
+  
+    <li><a href="/tags/getBoundingClientRect/">getBoundingClientRect</a><small>1</small></li>
+  
+    <li><a href="/tags/git/">git</a><small>1</small></li>
+  
+    <li><a href="/tags/html/">html</a><small>2</small></li>
+  
+    <li><a href="/tags/http/">http</a><small>1</small></li>
+  
+    <li><a href="/tags/javascript/">javascript</a><small>10</small></li>
+  
+    <li><a href="/tags/jquery/">jquery</a><small>1</small></li>
+  
+    <li><a href="/tags/jquery-noConflict/">jquery-noConflict</a><small>1</small></li>
+  
+    <li><a href="/tags/js-es6/">js-es6</a><small>2</small></li>
+  
+    <li><a href="/tags/js-proto/">js__proto__</a><small>1</small></li>
+  
+    <li><a href="/tags/js冒泡/">js冒泡</a><small>1</small></li>
+  
+    <li><a href="/tags/knockout-js/">knockout.js</a><small>4</small></li>
+  
+    <li><a href="/tags/map/">map</a><small>2</small></li>
+  
+    <li><a href="/tags/media-query/">media-query</a><small>1</small></li>
+  
+    <li><a href="/tags/mime/">mime</a><small>1</small></li>
+  
+    <li><a href="/tags/mobx/">mobx</a><small>1</small></li>
+  
+    <li><a href="/tags/nodejs/">nodejs</a><small>1</small></li>
+  
+    <li><a href="/tags/promise/">promise</a><small>1</small></li>
+  
+    <li><a href="/tags/react/">react</a><small>1</small></li>
+  
+    <li><a href="/tags/react-life/">react-life</a><small>1</small></li>
+  
+    <li><a href="/tags/reduce/">reduce</a><small>1</small></li>
+  
+    <li><a href="/tags/regexp/">regexp</a><small>1</small></li>
+  
+    <li><a href="/tags/scp/">scp</a><small>1</small></li>
+  
+    <li><a href="/tags/set/">set</a><small>1</small></li>
+  
+    <li><a href="/tags/shell/">shell</a><small>3</small></li>
+  
+    <li><a href="/tags/tar/">tar</a><small>1</small></li>
+  
+    <li><a href="/tags/tool/">tool</a><small>2</small></li>
+  
+    <li><a href="/tags/webpack/">webpack</a><small>1</small></li>
+  
+    <li><a href="/tags/webpack-howto/">webpack-howto</a><small>1</small></li>
+  
+    <li><a href="/tags/yarn/">yarn</a><small>1</small></li>
+  
+    <li><a href="/tags/代码片段/">代码片段</a><small>1</small></li>
+  
+    <li><a href="/tags/可视化格式模型/">可视化格式模型</a><small>1</small></li>
+  
+    <li><a href="/tags/小命令/">小命令</a><small>1</small></li>
+  
+    <li><a href="/tags/最基本操作/">最基本操作</a><small>1</small></li>
+  
+    <li><a href="/tags/模板/">模板</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/Array/" style="font-size: 10px;">Array</a> <a href="/tags/DOM/" style="font-size: 12px;">DOM</a> <a href="/tags/DOM-EDIT/" style="font-size: 10px;">DOM-EDIT</a> <a href="/tags/ES6/" style="font-size: 18px;">ES6</a> <a href="/tags/JavaScript/" style="font-size: 12px;">JavaScript</a> <a href="/tags/MySql/" style="font-size: 10px;">MySql</a> <a href="/tags/Symbol/" style="font-size: 10px;">Symbol</a> <a href="/tags/assert/" style="font-size: 10px;">assert</a> <a href="/tags/bind/" style="font-size: 10px;">bind</a> <a href="/tags/carousel/" style="font-size: 10px;">carousel</a> <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/css-selector/" style="font-size: 10px;">css-selector</a> <a href="/tags/generator/" style="font-size: 10px;">generator</a> <a href="/tags/getBoundingClientRect/" style="font-size: 10px;">getBoundingClientRect</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/html/" style="font-size: 12px;">html</a> <a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/javascript/" style="font-size: 20px;">javascript</a> <a href="/tags/jquery/" style="font-size: 10px;">jquery</a> <a href="/tags/jquery-noConflict/" style="font-size: 10px;">jquery-noConflict</a> <a href="/tags/js-es6/" style="font-size: 12px;">js-es6</a> <a href="/tags/js-proto/" style="font-size: 10px;">js__proto__</a> <a href="/tags/js冒泡/" style="font-size: 10px;">js冒泡</a> <a href="/tags/knockout-js/" style="font-size: 16px;">knockout.js</a> <a href="/tags/map/" style="font-size: 12px;">map</a> <a href="/tags/media-query/" style="font-size: 10px;">media-query</a> <a href="/tags/mime/" style="font-size: 10px;">mime</a> <a href="/tags/mobx/" style="font-size: 10px;">mobx</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/promise/" style="font-size: 10px;">promise</a> <a href="/tags/react/" style="font-size: 10px;">react</a> <a href="/tags/react-life/" style="font-size: 10px;">react-life</a> <a href="/tags/reduce/" style="font-size: 10px;">reduce</a> <a href="/tags/regexp/" style="font-size: 10px;">regexp</a> <a href="/tags/scp/" style="font-size: 10px;">scp</a> <a href="/tags/set/" style="font-size: 10px;">set</a> <a href="/tags/shell/" style="font-size: 14px;">shell</a> <a href="/tags/tar/" style="font-size: 10px;">tar</a> <a href="/tags/tool/" style="font-size: 12px;">tool</a> <a href="/tags/webpack/" style="font-size: 10px;">webpack</a> <a href="/tags/webpack-howto/" style="font-size: 10px;">webpack-howto</a> <a href="/tags/yarn/" style="font-size: 10px;">yarn</a> <a href="/tags/代码片段/" style="font-size: 10px;">代码片段</a> <a href="/tags/可视化格式模型/" style="font-size: 10px;">可视化格式模型</a> <a href="/tags/小命令/" style="font-size: 10px;">小命令</a> <a href="/tags/最基本操作/" style="font-size: 10px;">最基本操作</a> <a href="/tags/模板/" style="font-size: 10px;">模板</a>
+  </div>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  <p>
+  
+  &copy; 2017 supernever
+  
+  All rights reserved.</p>
+  <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
+</div>
+<div class="clearfix"></div>
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script></footer>
+  <script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<div id='bg'></div>
+</body>
+</html>
