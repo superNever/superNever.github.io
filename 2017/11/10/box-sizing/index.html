@@ -3,16 +3,18 @@
 <head>
   <meta charset="utf-8" />
   
-  <title>第 3 页 | 前端 | supernever</title>
+  <title>box-sizing | supernever</title>
   <meta name="author" content="supernever" />
 
+  
+  <meta name="description" content="简单介绍一下" />
   
 
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-  
+  <meta property="og:title" content="box-sizing" />
   <meta property="og:site_name" content="supernever" />
 
   
@@ -55,25 +57,53 @@
 </nav>
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-<h2 class="archive-title category">前端</h2>
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2017-11-10T07:01:25.000Z"><a href="/2017/11/10/box-sizing/">2017-11-10</a></time>
+      
+      
+  
+    <h1 class="title">box-sizing</h1>
+  
 
+    </header>
+    <div class="entry">
+      
+        <p>简单介绍一下<br><a id="more"></a></p>
+<p><code>box-sizing</code> 属性用于更改用于计算元素宽度和高度的默认的<code>CSS 盒子模型</code>。可以使用此属性来模拟不正确支持CSS盒子模型规范的浏览器的行为。</p>
+<p><code>box-sizing</code>属性:</p>
+<ul>
+<li><code>content-box</code>  是默认值。如果你设置一个元素的宽为100px，那么这个元素的内容区会有100px宽，并且任何边框和内边距的宽度都会被增加到最后绘制出来的元素宽度中。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">尺寸计算公式：width = 内容的宽度，height = 内容的高度。宽度和高度都不包含内容的边框（border）和内边距（padding）。</div></pre></td></tr></table></figure>
+<ul>
+<li><code>border-box</code> 告诉浏览器去理解你设置的边框和内边距的值是包含在width内的。也就是说，如果你将一个元素的width设为100px,那么这100px会包含其它的border和padding，内容区的实际宽度会是width减去border + padding的计算值。大多数情况下这使得我们更容易的去设定一个元素的宽高</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">width = border + padding + 内容的  width，</div><div class="line">height = border + padding + 内容的 height。</div></pre></td></tr></table></figure>
+<p><mark style="background-color:red">一些专家甚至建议所有的Web开发者们将所有的元素的box-sizing都设为border-box。</mark></p>
 
-  <div class="archive">
+      
+    </div>
     
-      <article class="post">
-        <div class="post-content">
-          <header>
-            <div class="icon"></div>
-            <time datetime="2016-06-06T01:49:17.000Z"><a href="/2016/06/06/ko-introduction/">2016-06-06</a></time>
-            
-              <h1 class="title"><a href="/2016/06/06/ko-introduction/">knockout.js--简单介绍</a></h1>
-            
-          </header>
+    <footer>
+        <div class="alignright">
+          
+          <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
         </div>
-      </article>
-    
+        
+        
+        <!-- partial('post/share') -->
+      <div class="clearfix"></div>
+    </footer>
   </div>
+</article>
+
+
+
 </div></div>
     <aside id="sidebar" class="alignright">
   <div class="search">

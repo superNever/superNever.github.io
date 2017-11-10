@@ -585,6 +585,7 @@ article footer .addthis iframe {
 .archive article {
   -webkit-box-shadow: none;
   box-shadow: none;
+  margin: 10px 0;
 }
 .archive article .post-content {
   margin-bottom: 0;
