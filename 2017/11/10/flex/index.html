@@ -1,0 +1,308 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8" />
+  
+  <title>flex | supernever</title>
+  <meta name="author" content="supernever" />
+
+  
+  <meta name="description" content="简单介绍一下" />
+  
+
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <meta property="og:title" content="flex" />
+  <meta property="og:site_name" content="supernever" />
+
+  
+  
+
+  
+    <meta property="og:image" content="undefined" />
+  
+
+  
+  <link href="/css/images/favicon.ico" rel="icon" />
+  
+
+  <link rel="alternate" href="/atom.xml" title="supernever" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+
+  <!-- baidu webmaster push -->
+  <script src='//push.zhanzhang.baidu.com/push.js'></script>
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">supernever</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2017-11-10T06:26:43.000Z"><a href="/2017/11/10/flex/">2017-11-10</a></time>
+      
+      
+  
+    <h1 class="title">flex</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>简单介绍一下<br><a id="more"></a></p>
+<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>面布局必须适应不同的屏幕尺寸和不同的显示设备时，元素可预测地运行。对于许多应用程序，弹性盒子模型提供了对块模型的改进，因为它不使用浮动，flex容器的边缘也不会与其内容的边缘折叠。</p>
+<p><img src="/css/images/construct.png" alt="image"></p>
+<h3 id="弹性容器-Flex-container"><a href="#弹性容器-Flex-container" class="headerlink" title="弹性容器(Flex container)"></a>弹性容器(Flex container)</h3><p>包含着弹性项目的<code>父元素</code>。通过设置<code>display</code>属性的值为<code>flex</code>或 <code>inline-flex</code>来定义弹性容器。<br>主要设置项如下：</p>
+<ul>
+<li>flex-direction   确立主轴</li>
+<li>flex-wrap           确定单行显示还是多行显示，默认nowrap，还包含wrap， wrap-reverse</li>
+<li>flex-flow<ul>
+<li>flex-direction  </li>
+<li>flex-wrap</li>
+</ul>
+</li>
+<li>justify-content  定义了在当前行上，弹性项目沿<code>主轴</code>如何<code>排布</code>，包含flex-start | flex-end | center | space-between | space-around</li>
+<li>align-items      定义了在当前行上，弹性项目沿<code>侧轴</code>默认如何<code>排布</code>。</li>
+<li>align-content 属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用</li>
+</ul>
+<h3 id="弹性元素"><a href="#弹性元素" class="headerlink" title="弹性元素"></a>弹性元素</h3><p>让某个元素使用弹性布局，就为它添加 <code>flex</code> 属性。一般情况下，你将会使用下列三个值之一：</p>
+<p>如果你想让元素仅仅使用它本身的宽度，比如按钮，则设置<code>flex: none</code>，none 将会被解释为 <code>0 0 auto</code>.<br>如果想要一个固定大小的元素，则设置 <code>flex: 0 0 size</code>。如：<code>flex 0 0 60px</code>。<br>如果你想让元素自动扩展到可以利用的空间，如果有多个这种类型的元素，它们可以平均分配空间，则设置 <code>flex: auto</code>，它代表 <code>1 1 auto</code>.</p>
+<h4 id="flex-grow"><a href="#flex-grow" class="headerlink" title="flex-grow"></a>flex-grow</h4><p><code>flex-grow</code>属性定义弹性盒子项（<code>flex item</code>）的拉伸因子。</p>
+<h4 id="flex-shrink"><a href="#flex-shrink" class="headerlink" title="flex-shrink"></a>flex-shrink</h4><p><code>flex-shrink</code> 属性指定了 <code>flex</code> 元素的收缩规则。<code>flex</code>元素仅在默认宽度之和大于容器的时候才会发生收缩，其收缩的大小是依据 <code>flex-shrink</code>的值。</p>
+<h4 id="flex-basis"><a href="#flex-basis" class="headerlink" title="flex-basis"></a>flex-basis</h4><p><code>flex-basis</code> 指定了 <code>flex</code> 元素在主轴方向上的初始大小。如果不使用 <code>box-sizing</code> 来改变盒模型的话，那么这个属性就决定了 <code>flex</code> 元素的内容盒（<code>content-box</code>）的宽或者高（取决于主轴的方向）的尺寸大小。</p>
+<p><a href="https://codepen.io/superNever/pen/gXmOBy" target="_blank" rel="external">在线玩🌰</a></p>
+
+      
+    </div>
+    
+    <footer>
+        <div class="alignright">
+          
+          <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
+        </div>
+        
+        
+        <!-- partial('post/share') -->
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:www.supernever.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/ES6/">ES6</a><small>10</small></li>
+  
+    <li><a href="/categories/前端/">前端</a><small>21</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">最新文章</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2017/11/10/flex/">flex</a>
+      </li>
+    
+      <li>
+        <a href="/2017/07/10/javascript基础-Array/">javascript基础-Array</a>
+      </li>
+    
+      <li>
+        <a href="/2017/03/28/node-assert/">node_assert</a>
+      </li>
+    
+      <li>
+        <a href="/2017/03/03/async-await/">async-await</a>
+      </li>
+    
+      <li>
+        <a href="/2017/03/02/mobx几个小关键词/">mobx几个小关键词</a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">标签</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/Array/">Array</a><small>1</small></li>
+  
+    <li><a href="/tags/DOM/">DOM</a><small>2</small></li>
+  
+    <li><a href="/tags/DOM-EDIT/">DOM-EDIT</a><small>1</small></li>
+  
+    <li><a href="/tags/ES6/">ES6</a><small>9</small></li>
+  
+    <li><a href="/tags/JavaScript/">JavaScript</a><small>2</small></li>
+  
+    <li><a href="/tags/MySql/">MySql</a><small>1</small></li>
+  
+    <li><a href="/tags/Symbol/">Symbol</a><small>1</small></li>
+  
+    <li><a href="/tags/assert/">assert</a><small>1</small></li>
+  
+    <li><a href="/tags/bind/">bind</a><small>1</small></li>
+  
+    <li><a href="/tags/carousel/">carousel</a><small>1</small></li>
+  
+    <li><a href="/tags/css/">css</a><small>1</small></li>
+  
+    <li><a href="/tags/css-selector/">css-selector</a><small>1</small></li>
+  
+    <li><a href="/tags/generator/">generator</a><small>1</small></li>
+  
+    <li><a href="/tags/getBoundingClientRect/">getBoundingClientRect</a><small>1</small></li>
+  
+    <li><a href="/tags/git/">git</a><small>1</small></li>
+  
+    <li><a href="/tags/html/">html</a><small>2</small></li>
+  
+    <li><a href="/tags/http/">http</a><small>1</small></li>
+  
+    <li><a href="/tags/javascript/">javascript</a><small>10</small></li>
+  
+    <li><a href="/tags/jquery/">jquery</a><small>1</small></li>
+  
+    <li><a href="/tags/jquery-noConflict/">jquery-noConflict</a><small>1</small></li>
+  
+    <li><a href="/tags/js-es6/">js-es6</a><small>2</small></li>
+  
+    <li><a href="/tags/js-proto/">js__proto__</a><small>1</small></li>
+  
+    <li><a href="/tags/js冒泡/">js冒泡</a><small>1</small></li>
+  
+    <li><a href="/tags/knockout-js/">knockout.js</a><small>4</small></li>
+  
+    <li><a href="/tags/map/">map</a><small>2</small></li>
+  
+    <li><a href="/tags/media-query/">media-query</a><small>1</small></li>
+  
+    <li><a href="/tags/mime/">mime</a><small>1</small></li>
+  
+    <li><a href="/tags/mobx/">mobx</a><small>1</small></li>
+  
+    <li><a href="/tags/nodejs/">nodejs</a><small>1</small></li>
+  
+    <li><a href="/tags/promise/">promise</a><small>1</small></li>
+  
+    <li><a href="/tags/react/">react</a><small>1</small></li>
+  
+    <li><a href="/tags/react-life/">react-life</a><small>1</small></li>
+  
+    <li><a href="/tags/reduce/">reduce</a><small>1</small></li>
+  
+    <li><a href="/tags/regexp/">regexp</a><small>1</small></li>
+  
+    <li><a href="/tags/scp/">scp</a><small>1</small></li>
+  
+    <li><a href="/tags/set/">set</a><small>1</small></li>
+  
+    <li><a href="/tags/shell/">shell</a><small>3</small></li>
+  
+    <li><a href="/tags/tar/">tar</a><small>1</small></li>
+  
+    <li><a href="/tags/tool/">tool</a><small>2</small></li>
+  
+    <li><a href="/tags/webpack/">webpack</a><small>1</small></li>
+  
+    <li><a href="/tags/webpack-howto/">webpack-howto</a><small>1</small></li>
+  
+    <li><a href="/tags/yarn/">yarn</a><small>1</small></li>
+  
+    <li><a href="/tags/代码片段/">代码片段</a><small>1</small></li>
+  
+    <li><a href="/tags/可视化格式模型/">可视化格式模型</a><small>1</small></li>
+  
+    <li><a href="/tags/小命令/">小命令</a><small>1</small></li>
+  
+    <li><a href="/tags/最基本操作/">最基本操作</a><small>1</small></li>
+  
+    <li><a href="/tags/模板/">模板</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/Array/" style="font-size: 10px;">Array</a> <a href="/tags/DOM/" style="font-size: 12px;">DOM</a> <a href="/tags/DOM-EDIT/" style="font-size: 10px;">DOM-EDIT</a> <a href="/tags/ES6/" style="font-size: 18px;">ES6</a> <a href="/tags/JavaScript/" style="font-size: 12px;">JavaScript</a> <a href="/tags/MySql/" style="font-size: 10px;">MySql</a> <a href="/tags/Symbol/" style="font-size: 10px;">Symbol</a> <a href="/tags/assert/" style="font-size: 10px;">assert</a> <a href="/tags/bind/" style="font-size: 10px;">bind</a> <a href="/tags/carousel/" style="font-size: 10px;">carousel</a> <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/css-selector/" style="font-size: 10px;">css-selector</a> <a href="/tags/generator/" style="font-size: 10px;">generator</a> <a href="/tags/getBoundingClientRect/" style="font-size: 10px;">getBoundingClientRect</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/html/" style="font-size: 12px;">html</a> <a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/javascript/" style="font-size: 20px;">javascript</a> <a href="/tags/jquery/" style="font-size: 10px;">jquery</a> <a href="/tags/jquery-noConflict/" style="font-size: 10px;">jquery-noConflict</a> <a href="/tags/js-es6/" style="font-size: 12px;">js-es6</a> <a href="/tags/js-proto/" style="font-size: 10px;">js__proto__</a> <a href="/tags/js冒泡/" style="font-size: 10px;">js冒泡</a> <a href="/tags/knockout-js/" style="font-size: 16px;">knockout.js</a> <a href="/tags/map/" style="font-size: 12px;">map</a> <a href="/tags/media-query/" style="font-size: 10px;">media-query</a> <a href="/tags/mime/" style="font-size: 10px;">mime</a> <a href="/tags/mobx/" style="font-size: 10px;">mobx</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/promise/" style="font-size: 10px;">promise</a> <a href="/tags/react/" style="font-size: 10px;">react</a> <a href="/tags/react-life/" style="font-size: 10px;">react-life</a> <a href="/tags/reduce/" style="font-size: 10px;">reduce</a> <a href="/tags/regexp/" style="font-size: 10px;">regexp</a> <a href="/tags/scp/" style="font-size: 10px;">scp</a> <a href="/tags/set/" style="font-size: 10px;">set</a> <a href="/tags/shell/" style="font-size: 14px;">shell</a> <a href="/tags/tar/" style="font-size: 10px;">tar</a> <a href="/tags/tool/" style="font-size: 12px;">tool</a> <a href="/tags/webpack/" style="font-size: 10px;">webpack</a> <a href="/tags/webpack-howto/" style="font-size: 10px;">webpack-howto</a> <a href="/tags/yarn/" style="font-size: 10px;">yarn</a> <a href="/tags/代码片段/" style="font-size: 10px;">代码片段</a> <a href="/tags/可视化格式模型/" style="font-size: 10px;">可视化格式模型</a> <a href="/tags/小命令/" style="font-size: 10px;">小命令</a> <a href="/tags/最基本操作/" style="font-size: 10px;">最基本操作</a> <a href="/tags/模板/" style="font-size: 10px;">模板</a>
+  </div>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  <p>
+  
+  &copy; 2017 supernever
+  
+  All rights reserved.</p>
+  <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
+</div>
+<div class="clearfix"></div>
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script></footer>
+  <script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<div id='bg'></div>
+</body>
+</html>
