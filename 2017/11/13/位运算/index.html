@@ -3,19 +3,18 @@
 <head>
   <meta charset="utf-8" />
   
-  <title>探寻自我 | supernever</title>
+  <title>位运算 | supernever</title>
   <meta name="author" content="supernever" />
 
   
-  <meta name="description" content="个人信仰人生就像写代码，每一次成长就是一次更新，每一次收获就是一个迭代。所以…得写好代码，写好人生（就算现在写不出好的代码，可至少有一颗迭代的心），付出才可能有回报。
-兴趣喜欢海贼王但不是狂热追求者，喜欢🏀但也不是年年都打，喜欢健身但是健身卡一放就是一年。。。。反正至今为止就发现写代码还是天天都在" />
+  <meta name="description" content="简单介绍一下" />
   
 
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-  <meta property="og:title" content="探寻自我" />
+  <meta property="og:title" content="位运算" />
   <meta property="og:site_name" content="supernever" />
 
   
@@ -58,23 +57,54 @@
 </nav>
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper"><article class="page">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
   <div class="post-content">
     <header>
       
+        <div class="icon"></div>
+        <time datetime="2017-11-13T08:14:48.000Z"><a href="/2017/11/13/位运算/">2017-11-13</a></time>
+      
       
   
-    <h1 class="title">探寻自我</h1>
+    <h1 class="title">位运算</h1>
   
 
     </header>
     <div class="entry">
       
-        <ul>
-<li>个人信仰<br>人生就像写代码，每一次成长就是一次更新，每一次收获就是一个迭代。所以…得写好代码，写好人生（就算现在写不出好的代码，可至少有一颗迭代的心），付出才可能有回报。</li>
-<li>兴趣<br>喜欢<code>海贼王</code>但不是狂热追求者，喜欢🏀但也不是年年都打，喜欢健身但是健身卡一放就是一年。。。。反正至今为止就发现写代码还是天天都在做的事情😶😳囧</li>
-</ul>
+        <p>简单介绍一下<br><a id="more"></a></p>
+<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p><code>按位与&amp;</code>,<code>按位或|</code>,<code>按位异或^</code>,<code>按位非~</code>是将操作数的每个位当做布尔值<code>(1=true,0=false)</code>，而<code>左移&lt;&lt;</code>,<code>有符号右移&gt;&gt;</code>,<code>无符号右移&gt;&gt;&gt;</code>都是来进行移动</p>
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>位运算符要求他的操作数是整数，这些整数是32位而非64位的浮点数。必要时会将操作数转换为数字，并将数字强制转换为32位整型，这会忽略原格式中的小数部分和任何超过32位的二进制位。</p>
+<h3 id="简记"><a href="#简记" class="headerlink" title="简记"></a>简记</h3><p>按位与(&amp;)</p>
+<blockquote>
+<p>两个操作数都为1结果才是1</p>
+</blockquote>
+<p>按位或(|)</p>
+<blockquote>
+<p>两个操作数至少有一个为1结果才是1</p>
+</blockquote>
+<p>按位异或(^)</p>
+<blockquote>
+<p>两个操作数有且只有一个为1结果才是1</p>
+</blockquote>
+<p>按位非(~)</p>
+<blockquote>
+<p>将操作数所有位取反。在JavaScript中带符号的整数的表示方法，对一个值使用<code>~</code>运算符相当于改变他的符号并减1.</p>
+</blockquote>
+<hr>
+<p>左移&lt;&lt;</p>
+<blockquote>
+<p>将一个值左移相当于它乘以2，左移两位相当于乘以4，以此类推。例如<code>7&lt;&lt;2 = 28</code></p>
+</blockquote>
+<p>带符号右移&gt;&gt;</p>
+<blockquote>
+<p>如果第一个操作数是正数，移位后用0补充高位，负数则用1来补全高位….将一个值右移1位，相当于用它除以2(忽略余数)，右移两位，相当于它除以4，以此类推。<code>7&gt;&gt;1=3  -7&gt;&gt;1=-4</code></p>
+</blockquote>
+<p>不带符号右移&gt;&gt;&gt;</p>
+<blockquote>
+<p>与有符号操作一致，只不过左边高位一直用1补充，与符号无关。</p>
+</blockquote>
 
       
     </div>
